@@ -254,6 +254,14 @@ class DotfilesTestCase(unittest.TestCase):
         dotfiles.add([os.path.join(self.homedir, package_file)])
 
 
+    def test_single_sync(self):
+        """
+        Test syncing a single file
+        """
+
+        pass
+
+
 def suite():
     suite = unittest.TestLoader().loadTestsFromTestCase(DotfilesTestCase)
     return suite
